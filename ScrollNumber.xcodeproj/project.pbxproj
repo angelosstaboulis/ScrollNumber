@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D68741B32C33035A0077C4BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D6A68AFE2C2FC108002C6DAE /* ScrollNumber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrollNumber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6A68B012C2FC108002C6DAE /* ScrollNumberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollNumberApp.swift; sourceTree = "<group>"; };
 		D6A68B032C2FC108002C6DAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -94,6 +95,7 @@
 		D6A68B002C2FC108002C6DAE /* ScrollNumber */ = {
 			isa = PBXGroup;
 			children = (
+				D68741B32C33035A0077C4BF /* Info.plist */,
 				D6A68B012C2FC108002C6DAE /* ScrollNumberApp.swift */,
 				D6A68B032C2FC108002C6DAE /* ContentView.swift */,
 				D6A68B052C2FC109002C6DAE /* Assets.xcassets */,
@@ -425,6 +427,7 @@
 				DEVELOPMENT_TEAM = K6LJCT8RAA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScrollNumber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +457,7 @@
 				DEVELOPMENT_TEAM = K6LJCT8RAA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ScrollNumber/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

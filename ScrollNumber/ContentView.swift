@@ -6,11 +6,17 @@
 //
 
 import SwiftUI
-
+struct Numbers: Identifiable, Hashable{
+    let id = UUID()
+    var number: Int
+    func hash(into hasher: inout Hasher) {
+        
+    }
+}
 struct ContentView: View {
     @State private var selectedCell = 2
     @State private var newSelection = 0
-    @State var cells:[Int] = []
+    @State var cells:[Numbers] = []
     var body: some View {
         Text("Horizontal SwiftUI Scroll Example")
         ScrollViewReader { scrollViewProxy in
@@ -29,10 +35,11 @@ struct ContentView: View {
                     })
                     ScrollView(.horizontal){
                         HStack{
-                            ForEach(cells,id:\.self) {
-                                Text("\($0)")
+                            ForEach(cells.indices,id: \.self) { item in
+                                Text(String(describing:cells[item].number))
                                     .frame(width: 50, height: 45)
-                            }.scrollTargetLayout()
+                                    .id(item)
+                            }
                         }
                     }
                     Button(action: {
@@ -49,7 +56,7 @@ struct ContentView: View {
                     })
                 }.onAppear(perform: {
                     for item in 0..<20{
-                        cells.append(item)
+                        cells.append(.init(number: item))
                     }
             })
             .onChange(of: selectedCell) {
